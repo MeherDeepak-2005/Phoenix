@@ -39,12 +39,27 @@ def record_audio(ask=False):
 
         voice_data = voice_data.lower()
         return voice_data
+
+def there_exists(terms):
+    for term in terms:
+        if term in voice_data:
+            return True
+
         
 time.sleep(1)
 while 1:
     voice_data = record_audio()
-
     msg = voice_data.lower()
+    if there_exists(["Play a song","Lets rock and roll","Play a nice song"]).lower():
+        url = 'https://music.amazon.in'
+        webbrowser.get().open(url)
+        msg = "play music"
+    if there_exists(["play a movie","netflix"]).lower():
+        url = 'https://www.netflix.com/browse'
+        webbrowser.get().open(url)
+        msg = "play a movie"
     res = chatbot_response(msg)
     speak(res)
+
+
 

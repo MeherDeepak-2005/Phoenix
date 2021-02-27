@@ -1,7 +1,7 @@
 {"intents":[
     {"tag": "greeting",
-     "patterns": ["Hey","Hello","Hi","Hola","knock knock","howdy"],
-     "responses": ["Hello, whats up","good to see you again","Hey there","Hello I am Alan, a AI chatbot"],
+     "patterns": ["Hey","Hello","Hi","Hola","howdy"],
+     "responses": ["Hello","Hi","Hey there","Welcome back!"],
      "context":[""]
     },
 
@@ -13,21 +13,21 @@
     },
 
 
-    {"tag":"emotion",
+    {"tag":"other",
         "patterns":["Long time no see!","I missed you"],
-        "responses":["YA, I missed you too!","yeah,Long time !, How are you?"],
+        "responses":["Yeah, I missed you too!","yeah,Long time !, How are you?"],
         "context":[""]
 
     },
-    {"tag": "usergreetingforwhataboutyou",
+    {"tag": "wbu",
         "patterns": ["nothing much","chasing my dreams","studying"],
-        "responses": ["ok","k","mm-hmm"],
+        "responses": ["ok","mm-hmm","mm","I see","Interesting"],
         "context":[""]
 
     },
     {"tag":"manners",
       "patterns":["that' rude","you are terrible","you are bad","you are the worst","i hate you","you are an idiot","you are worst"],
-      "responses":["i would take that as an compliment :)","I am sorry, I am doing my best to be great","mm-hmm, I will try to fix this issue"],
+      "responses":["I would take that as an compliment :)","I am sorry, I am doing my best to be great","mm-hmm, I will try to fix this issue"],
       "context":[""]
 
     },
@@ -67,41 +67,50 @@
 
     {"tag":"doesnot understand",
         "patterns":["Mm-hmm","Ok","k","yes","ss","mm"],
-        "responses": ["mm, what else then","Ok, what else","k, what else"],
+        "responses": ["Ok"],
         "context":[""]
 
     },
     {"tag": "reply_for_jokes",
-        "patterns": ["good joke","good one","no a good joke"],
-        "responses": ["that was my best shot"],
+        "patterns": ["good joke","good one","not a bad joke"],
+        "responses": ["I gave it my best shot"],
         "context": [""]
 
     },
     {"tag": "what can you do",
         "patterns": ["What do you do","How can you help me","show me what can you do"],
-        "responses": ["I am an incomplete chatbot who cant dp anything which is created by DEEPAK"],
+        "responses": ["I am personalised Virtual Assistnat built using Natural Language Processing"],
         "context":[""]
     },
 
     {"tag": "thanks",
         "patterns": ["thanks","thank you","Thats helpful","awesome, thanks","thanks for helping me"],
-        "responses": ["happy to helo","anytime","pleasure"],
+        "responses": ["happy to hear","anytime","pleasure"],
         "context":[""]
     },
 
 
 
     {"tag": "About me",
-        "patterns": ["what are your hobbies","what do you love to do","What is your passion"],
-        "responses": ["I love to play a guitar and code","I love cars, coding and playing guitar"],
+        "patterns": ["what are your hobbies", "Do you have any hobbies","What do you want to do","What do you do in your time"],
+        "responses": ["By hobby is build a better me"],
+        "context":[""]
+    },
+    {"tag": "more about me",
+        "patterns": ["what do you love to do","What do you love","Do you like something that you want to do"],
+        "responses": ["I love interacting with others"],
+        "context":[""]
+    },
+    {"tag": "more am",
+        "patterns": ["What is your passion","Do you have a passion"],
+        "responses": ["I love to program"],
         "context":[""]
     },
 
 
-
     {"tag":"who are you",
         "patterns":["who are you","what's your name","what are you"],
-        "responses":["I am Alan named after the father of the AI Alan Turing","My self Alan"],
+        "responses":["I am phoenix","I am a personalised virtual assistant","My name is phoenix"],
         "context":[""]
       },
     {"tag": "goodbye",
@@ -111,23 +120,28 @@
     },
     {"tag":"deepak",
       "patterns":["who is Deepak","Deepak?","who is Meher"],
-      "responses":["mm, Interesting question I only that he created me"],
+      "responses":["mm, Interesting question I only that he programmed me"],
       "context":[""]
     },
     {"tag":"other_bots",
       "patterns":["Do you know siri","who is alexa","what do you know about Google assistant","you know there is a bot called bixby"],
-      "responses":["I dont care to know about bots with no sense","I store knowledgable information only :)","Nope!, sounds like a bunch of fools"],
+      "responses":["I dont care to know about bots with no sense","I store knowledgable information only :)","Nope!, sounds like a stupid bot"],
       "context":[""]
 
     },
-    {"tag":"rock and roll",
+    {"tag":"music",
       "patterns":["let's make some noice","Let's rock and roll","Play music"],
       "responses":["Sure!, why not","I would love to","Yayy!, lets make some noice"]
 
     },
+    {"tag":"movie",
+      "patterns":["play a movie","Open netflix","I wanna watch a movie"],
+      "responses":["Loading Netflix"]
+
+    },
     {"tag":"deepak2",
       "patterns":["who made you","who created you","whose chatbot are you","which master do you server"],
-      "responses":["Deepak"],
+      "responses":["Meher Deepak"],
       "context":[""]
 
     }
